@@ -6,3 +6,6 @@ node_modules/
 screens_tmp/
 research/
 eval/results_run.log
+
+.vercel
+.env*
