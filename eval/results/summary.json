@@ -1,0 +1,306 @@
+{
+ "meta": {
+  "model": "gemini-3.5-flash-lite",
+  "median_latency_s": 2.07,
+  "p90_latency_s": 14.73,
+  "grounding_drops": 13
+ },
+ "systems": [
+  {
+   "system": "Rules baseline",
+   "n": 112,
+   "field_correct": {
+    "outcome": 106,
+    "fault": 82,
+    "parts": 94,
+    "dbm": 110,
+    "signoff": 111,
+    "revisit": 106
+   },
+   "record_exact": 70,
+   "missing": {
+    "tp": 36,
+    "fp": 29,
+    "fn": 4,
+    "gold_total": 40,
+    "tickets_needing_prompt": 30,
+    "caught": 36,
+    "false_prompts": 29,
+    "tickets_flag_exact": 88
+   },
+   "invented_values": 5
+  },
+  {
+   "system": "LLM only",
+   "n": 112,
+   "field_correct": {
+    "outcome": 109,
+    "fault": 103,
+    "parts": 109,
+    "dbm": 111,
+    "signoff": 107,
+    "revisit": 109
+   },
+   "record_exact": 93,
+   "missing": {
+    "tp": 36,
+    "fp": 3,
+    "fn": 4,
+    "gold_total": 40,
+    "tickets_needing_prompt": 30,
+    "caught": 36,
+    "false_prompts": 3,
+    "tickets_flag_exact": 105
+   },
+   "invented_values": 8
+  },
+  {
+   "system": "LLM + grounding check",
+   "n": 112,
+   "field_correct": {
+    "outcome": 109,
+    "fault": 103,
+    "parts": 103,
+    "dbm": 111,
+    "signoff": 112,
+    "revisit": 109
+   },
+   "record_exact": 92,
+   "missing": {
+    "tp": 38,
+    "fp": 3,
+    "fn": 2,
+    "gold_total": 40,
+    "tickets_needing_prompt": 30,
+    "caught": 38,
+    "false_prompts": 3,
+    "tickets_flag_exact": 107
+   },
+   "invented_values": 2
+  }
+ ],
+ "splits": {
+  "all": [
+   {
+    "system": "Rules baseline",
+    "n": 112,
+    "field_correct": {
+     "outcome": 106,
+     "fault": 82,
+     "parts": 94,
+     "dbm": 110,
+     "signoff": 111,
+     "revisit": 106
+    },
+    "record_exact": 70,
+    "missing": {
+     "tp": 36,
+     "fp": 29,
+     "fn": 4,
+     "gold_total": 40,
+     "tickets_needing_prompt": 30,
+     "caught": 36,
+     "false_prompts": 29,
+     "tickets_flag_exact": 88
+    },
+    "invented_values": 5
+   },
+   {
+    "system": "LLM only",
+    "n": 112,
+    "field_correct": {
+     "outcome": 109,
+     "fault": 103,
+     "parts": 109,
+     "dbm": 111,
+     "signoff": 107,
+     "revisit": 109
+    },
+    "record_exact": 93,
+    "missing": {
+     "tp": 36,
+     "fp": 3,
+     "fn": 4,
+     "gold_total": 40,
+     "tickets_needing_prompt": 30,
+     "caught": 36,
+     "false_prompts": 3,
+     "tickets_flag_exact": 105
+    },
+    "invented_values": 8
+   },
+   {
+    "system": "LLM + grounding check",
+    "n": 112,
+    "field_correct": {
+     "outcome": 109,
+     "fault": 103,
+     "parts": 103,
+     "dbm": 111,
+     "signoff": 112,
+     "revisit": 109
+    },
+    "record_exact": 92,
+    "missing": {
+     "tp": 38,
+     "fp": 3,
+     "fn": 2,
+     "gold_total": 40,
+     "tickets_needing_prompt": 30,
+     "caught": 38,
+     "false_prompts": 3,
+     "tickets_flag_exact": 107
+    },
+    "invented_values": 2
+   }
+  ],
+  "dev": [
+   {
+    "system": "Rules baseline",
+    "n": 80,
+    "field_correct": {
+     "outcome": 80,
+     "fault": 65,
+     "parts": 72,
+     "dbm": 79,
+     "signoff": 80,
+     "revisit": 79
+    },
+    "record_exact": 61,
+    "missing": {
+     "tp": 26,
+     "fp": 5,
+     "fn": 2,
+     "gold_total": 28,
+     "tickets_needing_prompt": 21,
+     "caught": 26,
+     "false_prompts": 5,
+     "tickets_flag_exact": 74
+    },
+    "invented_values": 4
+   },
+   {
+    "system": "LLM only",
+    "n": 80,
+    "field_correct": {
+     "outcome": 78,
+     "fault": 73,
+     "parts": 80,
+     "dbm": 80,
+     "signoff": 77,
+     "revisit": 78
+    },
+    "record_exact": 68,
+    "missing": {
+     "tp": 25,
+     "fp": 3,
+     "fn": 3,
+     "gold_total": 28,
+     "tickets_needing_prompt": 21,
+     "caught": 25,
+     "false_prompts": 3,
+     "tickets_flag_exact": 74
+    },
+    "invented_values": 5
+   },
+   {
+    "system": "LLM + grounding check",
+    "n": 80,
+    "field_correct": {
+     "outcome": 78,
+     "fault": 73,
+     "parts": 80,
+     "dbm": 80,
+     "signoff": 80,
+     "revisit": 78
+    },
+    "record_exact": 71,
+    "missing": {
+     "tp": 26,
+     "fp": 3,
+     "fn": 2,
+     "gold_total": 28,
+     "tickets_needing_prompt": 21,
+     "caught": 26,
+     "false_prompts": 3,
+     "tickets_flag_exact": 75
+    },
+    "invented_values": 2
+   }
+  ],
+  "holdout": [
+   {
+    "system": "Rules baseline",
+    "n": 32,
+    "field_correct": {
+     "outcome": 26,
+     "fault": 17,
+     "parts": 22,
+     "dbm": 31,
+     "signoff": 31,
+     "revisit": 27
+    },
+    "record_exact": 9,
+    "missing": {
+     "tp": 10,
+     "fp": 24,
+     "fn": 2,
+     "gold_total": 12,
+     "tickets_needing_prompt": 9,
+     "caught": 10,
+     "false_prompts": 24,
+     "tickets_flag_exact": 14
+    },
+    "invented_values": 1
+   },
+   {
+    "system": "LLM only",
+    "n": 32,
+    "field_correct": {
+     "outcome": 31,
+     "fault": 30,
+     "parts": 29,
+     "dbm": 31,
+     "signoff": 30,
+     "revisit": 31
+    },
+    "record_exact": 25,
+    "missing": {
+     "tp": 11,
+     "fp": 0,
+     "fn": 1,
+     "gold_total": 12,
+     "tickets_needing_prompt": 9,
+     "caught": 11,
+     "false_prompts": 0,
+     "tickets_flag_exact": 31
+    },
+    "invented_values": 3
+   },
+   {
+    "system": "LLM + grounding check",
+    "n": 32,
+    "field_correct": {
+     "outcome": 31,
+     "fault": 30,
+     "parts": 23,
+     "dbm": 31,
+     "signoff": 32,
+     "revisit": 31
+    },
+    "record_exact": 21,
+    "missing": {
+     "tp": 12,
+     "fp": 0,
+     "fn": 0,
+     "gold_total": 12,
+     "tickets_needing_prompt": 9,
+     "caught": 12,
+     "false_prompts": 0,
+     "tickets_flag_exact": 32
+    },
+    "invented_values": 0
+   }
+  ]
+ }
+}

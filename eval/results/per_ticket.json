@@ -1,0 +1,6357 @@
+[
+ {
+  "id": "T001",
+  "split": "dev",
+  "note": "ONT dead no lights at all. swapped ONT, new unit synced first time. rx -19.8 dBm. customer signed on the tablet.",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -19.8,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -19.8,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -19.8,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -19.8,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "swapped ONT, new unit synced first time",
+   "fault": "ONT dead no lights at all",
+   "parts": "swapped ONT",
+   "dbm": "rx -19.8 dBm",
+   "signoff": "customer signed on the tablet",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T002",
+  "split": "dev",
+  "note": "no light at the ONT. traced it back, drop cable chewed thru by squirrels on the pole run. replaced 40m of drop and fitted a new connector. light level now minus twenty point five. cust signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 40,
+    "CONNECTOR": 1
+   },
+   "dbm": -20.5,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "CONNECTOR": 1,
+    "DROP_CABLE_M": 40
+   },
+   "dbm": -20.5,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 40,
+    "CONNECTOR": 1
+   },
+   "dbm": -20.5,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 40,
+    "CONNECTOR": 1
+   },
+   "dbm": -20.5,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "replaced 40m of drop and fitted a new connector",
+   "fault": "drop cable chewed thru by squirrels on the pole run",
+   "parts": "replaced 40m of drop and fitted a new connector",
+   "dbm": "minus twenty point five",
+   "signoff": "cust signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T003",
+  "split": "dev",
+  "note": "Customer not in. Called twice no answer, left card.",
+  "gold": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Customer not in.",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T004",
+  "split": "dev",
+  "note": "wifi dropping upstairs. nothing wrong with the line, moved router to the landing and changed channel to 36. cust happy.",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "dropped": [
+   [
+    "signoff",
+    true
+   ]
+  ],
+  "evidence": {
+   "outcome": "cust happy",
+   "fault": "wifi dropping upstairs",
+   "parts": null,
+   "dbm": null,
+   "signoff": "cust happy"
+  }
+ },
+ {
+  "id": "T005",
+  "split": "dev",
+  "note": "cleaned the connector at the wall socket, was filthy. reading went from -27 to -18.6. signed.",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -18.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -18.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -18.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -18.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "cleaned the connector",
+   "fault": "filthy",
+   "parts": null,
+   "dbm": "-18.6",
+   "signoff": "signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T006",
+  "split": "dev",
+  "note": "fibre snapped in the loft where the builder was working. just needs a re-route but i dont have enough drop on the van, back tomorrow",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "INTERNAL_CABLING",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "INTERNAL_CABLING",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "back tomorrow",
+   "fault": "fibre snapped in the loft",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "i dont have enough drop on the van"
+  }
+ },
+ {
+  "id": "T007",
+  "split": "dev",
+  "note": "port at the cabinet is dead, moved customer to port 14 at the cab, ont back up -21.2",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -21.2,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -21.2,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -21.2,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -21.2,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "ont back up",
+   "fault": "port at the cabinet is dead",
+   "parts": null,
+   "dbm": "-21.2",
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T008",
+  "split": "dev",
+  "note": "router wouldnt power on, it was the power supply not the router. swapped psu only, all green. customer signed off",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "all green",
+   "fault": "it was the power supply",
+   "parts": "swapped psu only",
+   "dbm": null,
+   "signoff": "customer signed off",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T009",
+  "split": "dev",
+  "note": "Tested everything, line is fine -19 at ONT, speeds good. no fault found. cust signed.",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -19.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -19.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -19.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -19.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Tested everything, line is fine",
+   "fault": "no fault found",
+   "parts": null,
+   "dbm": "-19 at ONT",
+   "signoff": "cust signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T010",
+  "split": "dev",
+  "note": "no service, duct got crushed by the driveway works and the drop inside is damaged. needs civils to dig before we can pull new cable",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CIVILS",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CIVILS",
+   "missing": []
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CIVILS",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CIVILS",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "needs civils to dig before we can pull new cable",
+   "fault": "drop inside is damaged",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "needs civils to dig"
+  }
+ },
+ {
+  "id": "T011",
+  "split": "dev",
+  "note": "whole street is down, not a customer side issue, cabinet looks like it lost power. escalated to network ops",
+  "gold": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "escalated to network ops",
+   "fault": "whole street is down",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T012",
+  "split": "dev",
+  "note": "replaced 2 patch leads and the faceplate, customer had yanked the cable out of the wall. light level ok.",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "PATCH_CORD": 2,
+    "FACEPLATE": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "PATCH_CORD": 2
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "PATCH_CORD": 2,
+    "FACEPLATE": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "PATCH_CORD": 2,
+    "FACEPLATE": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "replaced 2 patch leads and the faceplate",
+   "fault": "customer had yanked the cable out of the wall",
+   "parts": "replaced 2 patch leads and the faceplate",
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T013",
+  "split": "dev",
+  "note": "customer had to leave for school pickup halfway thru. ONT swapped but didnt get to test. coming back thurs",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "missing": []
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": false,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "missing": []
+  },
+  "dropped": [
+   [
+    "signoff",
+    false
+   ]
+  ],
+  "evidence": {
+   "outcome": "coming back thurs",
+   "fault": "ONT swapped",
+   "parts": "ONT swapped",
+   "dbm": null,
+   "signoff": "didnt get to test",
+   "revisit": "customer had to leave for school pickup"
+  }
+ },
+ {
+  "id": "T014",
+  "split": "dev",
+  "note": "landlord wont allow drilling the external wall so cant run new drop until we get permission. old drop is cracked at the entry point",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PERMISSION",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PERMISSION",
+   "missing": []
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PERMISSION",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PERMISSION",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "cant run new drop until we get permission",
+   "fault": "old drop is cracked at the entry point",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "landlord wont allow drilling the external wall so cant run new drop until we get permission"
+  }
+ },
+ {
+  "id": "T015",
+  "split": "dev",
+  "note": "drop is sagging and damaged at the pole, its a 9m pole and my ladder wont reach safely. needs a two man crew, rebooking",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 9
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "missing": []
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "rebooking",
+   "fault": "drop is sagging and damaged at the pole",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "needs a two man crew"
+  }
+ },
+ {
+  "id": "T016",
+  "split": "dev",
+  "note": "no fault found, everything working when i got here. customer says it drops in the evenings. advised to call in if it happens again",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "everything working when i got here",
+   "fault": "no fault found",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T017",
+  "split": "dev",
+  "note": "router was in a boot loop, factory reset didnt fix it so swapped for a new hub. rx -22.1. got sig.",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": -22.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": -22.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": -22.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": -22.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "swapped for a new hub",
+   "fault": "router was in a boot loop",
+   "parts": "swapped for a new hub",
+   "dbm": "rx -22.1",
+   "signoff": "got sig",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T018",
+  "split": "dev",
+  "note": "ONT had water damage from the leak in the cupboard. replaced the ONT and also gave them a new router as the old one was ancient",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "replaced the ONT and also gave them a new router",
+   "fault": "ONT had water damage",
+   "parts": "replaced the ONT and also gave them a new router",
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T019",
+  "split": "dev",
+  "note": "Fibre break about 3m from the house, spliced it, used 2 splice protectors. light -20.9 after. Customer signed.",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "SPLICE_PROTECTOR": 2
+   },
+   "dbm": -20.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "SPLICE_PROTECTOR": 2
+   },
+   "dbm": -20.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "SPLICE_PROTECTOR": 2
+   },
+   "dbm": -20.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "SPLICE_PROTECTOR": 2
+   },
+   "dbm": -20.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "spliced it",
+   "fault": "Fibre break",
+   "parts": "2 splice protectors",
+   "dbm": "-20.9",
+   "signoff": "Customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T020",
+  "split": "dev",
+  "note": "connector end face was scratched, cleaning didnt help so fitted a new field connector. -19.4 now. customer refused to sign, said theyve been waiting 3 weeks",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {
+    "CONNECTOR": 1
+   },
+   "dbm": -19.4,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": -19.4,
+   "signoff": false,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {
+    "CONNECTOR": 1
+   },
+   "dbm": -19.4,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {
+    "CONNECTOR": 1
+   },
+   "dbm": -19.4,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "fitted a new field connector. -19.4 now",
+   "fault": "connector end face was scratched",
+   "parts": "fitted a new field connector",
+   "dbm": "-19.4 now",
+   "signoff": "customer refused to sign",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T021",
+  "split": "dev",
+  "note": "nobody home, dog loose in the garden so couldnt get to the external box. card left",
+  "gold": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "nobody home",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T022",
+  "split": "dev",
+  "note": "access refused by the site manager at the office block, they had no booking on their side",
+  "gold": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "access refused",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T023",
+  "split": "dev",
+  "note": "speed complaint. laptop was stuck on 2.4GHz, turned on band steering, 600+ on 5GHz now. light level -17.5 for the record. customer signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": -17.5,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": -17.5,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": -17.5,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": -17.5,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "600+ on 5GHz now",
+   "fault": "laptop was stuck on 2.4GHz, turned on band steering",
+   "parts": null,
+   "dbm": "light level -17.5",
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T024",
+  "split": "dev",
+  "note": "minus three outside and the ONT power supply had packed in. new psu fitted, ont lit up. reading minus 18.2. signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": -18.2,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "ONT": 1,
+    "PSU": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": -18.2,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": -18.2,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "ont lit up",
+   "fault": "ONT power supply had packed in",
+   "parts": "new psu fitted",
+   "dbm": "minus 18.2",
+   "signoff": "signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T025",
+  "split": "dev",
+  "note": "ont flashing red. light level -31, way too low. cleaned the connector, -30, no change so fault is upstream. raised to network to check the cabinet port",
+  "gold": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -30.0,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -30.0,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -30.0,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -30.0,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "raised to network to check the cabinet port",
+   "fault": "raised to network to check the cabinet port",
+   "parts": null,
+   "dbm": "-30",
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T026",
+  "split": "dev",
+  "note": "Replaced ONT. Signed.",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Replaced ONT",
+   "fault": "Replaced ONT",
+   "parts": "Replaced ONT",
+   "dbm": null,
+   "signoff": "Signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T027",
+  "split": "dev",
+  "note": "fixed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "fixed",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T028",
+  "split": "dev",
+  "note": "fibre patch lead from the wall to the ONT was kinked behind the sofa. new patch lead fitted. -20. cust signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "PATCH_CORD": 1
+   },
+   "dbm": -20.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {},
+   "dbm": -20.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "PATCH_CORD": 1
+   },
+   "dbm": -20.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "PATCH_CORD": 1
+   },
+   "dbm": -20.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "new patch lead fitted",
+   "fault": "fibre patch lead from the wall to the ONT was kinked",
+   "parts": "new patch lead fitted",
+   "dbm": "-20",
+   "signoff": "cust signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T029",
+  "split": "dev",
+  "note": "found the break in the drop at the pole, started splicing but ran out of splice protectors. back tmrw first thing",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "back tmrw first thing",
+   "fault": "found the break in the drop at the pole",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "ran out of splice protectors"
+  }
+ },
+ {
+  "id": "T030",
+  "split": "dev",
+  "note": "router swapped",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "router swapped",
+   "fault": "router swapped",
+   "parts": "router swapped",
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T031",
+  "split": "dev",
+  "note": "so basically the customer said the internet had been off since the storm, I checked the ONT and there was no light, went outside and the drop had come off the hook on the wall and snapped, so I ran a new drop, about 25 metres, put a new connector on, and we're getting minus nineteen at the ONT now, customer signed for it",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 25,
+    "CONNECTOR": 1
+   },
+   "dbm": -19.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "CONNECTOR": 1,
+    "DROP_CABLE_M": 25
+   },
+   "dbm": -19,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 25,
+    "CONNECTOR": 1
+   },
+   "dbm": -19.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 25,
+    "CONNECTOR": 1
+   },
+   "dbm": -19.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "we're getting minus nineteen at the ONT now, customer signed for it",
+   "fault": "the drop had come off the hook on the wall and snapped",
+   "parts": "ran a new drop, about 25 metres, put a new connector on",
+   "dbm": "minus nineteen at the ONT",
+   "signoff": "customer signed for it",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T032",
+  "split": "dev",
+  "note": "had a spare router in the van but didnt need it, issue was the customers own mesh system fighting with our wifi. turned off our wifi, mesh in bridge mode. sig captured",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "issue was the customers own mesh system fighting with our wifi. turned off our wifi, mesh in bridge mode",
+   "fault": "customers own mesh system fighting with our wifi",
+   "parts": null,
+   "dbm": null,
+   "signoff": "sig captured",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T033",
+  "split": "dev",
+  "note": "Customer cancelled at the door, said it started working this morning. didnt go in.",
+  "gold": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "NO_ACCESS",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "NO_ACCESS",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Customer cancelled at the door",
+   "fault": "said it started working this morning",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T034",
+  "split": "dev",
+  "note": "ONT replaced, -21.7 at ONT, customer wasnt around to sign, wife let me in and she had to go",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -21.7,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -21.7,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -21.7,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -21.7,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "ONT replaced",
+   "fault": "ONT replaced",
+   "parts": "ONT replaced",
+   "dbm": "-21.7 at ONT",
+   "signoff": "customer wasnt around to sign",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T035",
+  "split": "dev",
+  "note": "tested line from the cabinet, reading fine at the cab but nothing at the house. break somewhere in the underground section, needs civils",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CIVILS",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CIVILS",
+   "missing": []
+  },
+  "llm": {
+   "outcome": "ESCALATED",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "ESCALATED",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "needs civils",
+   "fault": "break somewhere in the underground section",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T036",
+  "split": "dev",
+  "note": "dirty connector on the ONT side, cleaned both ends. was -26.4 now -19.1. no new parts. customer signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -19.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -19.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -19.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -19.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "cleaned both ends",
+   "fault": "dirty connector",
+   "parts": "no new parts",
+   "dbm": "-19.1",
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T037",
+  "split": "dev",
+  "note": "ONT power supply was dead, swapped it, also replaced 1 patch cord while I was there as it looked worn. Not sure what the reading was, forgot to note it. customer signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1,
+    "PATCH_CORD": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "PATCH_CORD": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1,
+    "PATCH_CORD": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1,
+    "PATCH_CORD": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "swapped it",
+   "fault": "ONT power supply was dead",
+   "parts": "swapped it, also replaced 1 patch cord",
+   "dbm": null,
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T038",
+  "split": "dev",
+  "note": "cab port fault, re-patched to spare port 7. light good at -18.9. no signature, customer at work, neighbour had the key",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -18.9,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -18.9,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -18.9,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -18.9,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "re-patched to spare port 7",
+   "fault": "cab port fault",
+   "parts": null,
+   "dbm": "-18.9",
+   "signoff": "no signature",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T039",
+  "split": "dev",
+  "note": "gate locked, no answer on the phone, waited 15 mins",
+  "gold": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "gate locked, no answer on the phone",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T040",
+  "split": "dev",
+  "note": "its an area outage, there are 3 other jobs on this street with the same thing. passed it to NOC",
+  "gold": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "passed it to NOC",
+   "fault": "its an area outage",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T041",
+  "split": "dev",
+  "note": "replaced 30m drop cable and 2 connectors, old drop was cut by a hedge trimmer. light level minus twenty one point three. customer signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 30,
+    "CONNECTOR": 2
+   },
+   "dbm": -21.3,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "CONNECTOR": 2,
+    "DROP_CABLE_M": 30
+   },
+   "dbm": -21.3,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 30,
+    "CONNECTOR": 2
+   },
+   "dbm": -21.3,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 30,
+    "CONNECTOR": 2
+   },
+   "dbm": -21.3,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "replaced 30m drop cable",
+   "fault": "old drop was cut by a hedge trimmer",
+   "parts": "replaced 30m drop cable and 2 connectors",
+   "dbm": "minus twenty one point three",
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T042",
+  "split": "dev",
+  "note": "customer said router keeps rebooting. firmware was old, updated firmware and it's been stable for 30 mins. no parts. customer signed.",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "been stable for 30 mins",
+   "fault": "router keeps rebooting",
+   "parts": "no parts",
+   "dbm": null,
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T043",
+  "split": "dev",
+  "note": "wall faceplate smashed when they moved furniture. new faceplate and a patch cord fitted. reading -20.2",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "FACEPLATE": 1,
+    "PATCH_CORD": 1
+   },
+   "dbm": -20.2,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "PATCH_CORD": 1,
+    "FACEPLATE": 1
+   },
+   "dbm": -20.2,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "FACEPLATE": 1,
+    "PATCH_CORD": 1
+   },
+   "dbm": -20.2,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "FACEPLATE": 1,
+    "PATCH_CORD": 1
+   },
+   "dbm": -20.2,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "new faceplate and a patch cord fitted",
+   "fault": "wall faceplate smashed",
+   "parts": "new faceplate and a patch cord fitted",
+   "dbm": "-20.2",
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T044",
+  "split": "dev",
+  "note": "needs a cherry picker, drop is on a tall pole over the main road and traffic management is needed. raised for a 2 person crew",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "missing": []
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "raised for a 2 person crew",
+   "fault": "drop is on a tall pole",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "raised for a 2 person crew"
+  }
+ },
+ {
+  "id": "T045",
+  "split": "dev",
+  "note": "ONT faulty, I didnt have one on the van, ordered one, will come back once it arrives",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "will come back once it arrives",
+   "fault": "ONT faulty",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "ordered one, will come back once it arrives"
+  }
+ },
+ {
+  "id": "T046",
+  "split": "dev",
+  "note": "no fault found. light -18.5, sync fine, speedtest 940/110. customer still unhappy, did not sign",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -18.5,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -18.5,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -18.5,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -18.5,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "no fault found",
+   "fault": "no fault found",
+   "parts": null,
+   "dbm": "light -18.5",
+   "signoff": "did not sign",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T047",
+  "split": "dev",
+  "note": "customer was rude and asked me to leave before i could start. nothing done",
+  "gold": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [
+   [
+    "signoff",
+    false
+   ]
+  ],
+  "evidence": {
+   "outcome": "customer was rude and asked me to leave before i could start",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": "nothing done",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T048",
+  "split": "dev",
+  "note": "swapped router, -20.6, signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": -20.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": -20.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": -20.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": -20.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "swapped router",
+   "fault": "swapped router",
+   "parts": "swapped router",
+   "dbm": "-20.6",
+   "signoff": "signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T049",
+  "split": "dev",
+  "note": "power surge killed the ONT, replaced the ONT and its PSU to be safe. light -19.9. customer signed on the app",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "PSU": 1
+   },
+   "dbm": -19.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -19.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "PSU": 1
+   },
+   "dbm": -19.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "PSU": 1
+   },
+   "dbm": -19.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "replaced the ONT and its PSU",
+   "fault": "power surge killed the ONT",
+   "parts": "replaced the ONT and its PSU",
+   "dbm": "light -19.9",
+   "signoff": "customer signed on the app",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T050",
+  "split": "dev",
+  "note": "cleaned connector, all good now",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "all good now",
+   "fault": "cleaned connector",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T051",
+  "split": "dev",
+  "note": "building has no riser access tonight, management office closed. need the building manager to sign the wayleave before install",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PERMISSION",
+   "missing": [
+    "fault"
+   ]
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PERMISSION",
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "building has no riser access tonight, management office closed",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "need the building manager to sign the wayleave"
+  }
+ },
+ {
+  "id": "T052",
+  "split": "dev",
+  "note": "got there, power cut on the whole road so cant test anything. rebook",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": [
+    "fault"
+   ]
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "rebook",
+   "fault": "power cut on the whole road",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "rebook"
+  }
+ },
+ {
+  "id": "T053",
+  "split": "dev",
+  "note": "customer moved the ONT themselves and bent the internal fibre too tight. re-routed the internal cable, added one splice protector where I re-spliced. -22.4. signature taken",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "SPLICE_PROTECTOR": 1
+   },
+   "dbm": -22.4,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "SPLICE_PROTECTOR": 1
+   },
+   "dbm": -22.4,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "SPLICE_PROTECTOR": 1
+   },
+   "dbm": -22.4,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "SPLICE_PROTECTOR": 1
+   },
+   "dbm": -22.4,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "re-routed the internal cable, added one splice protector where I re-spliced",
+   "fault": "bent the internal fibre too tight",
+   "parts": "added one splice protector",
+   "dbm": "-22.4",
+   "signoff": "signature taken",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T054",
+  "split": "dev",
+  "note": "cust reported slow speeds on the TV. it was on wifi in the far room, set up a dedicated 5GHz network for it. speeds fine. -17.9. customer signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": -17.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": -17.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": -17.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": -17.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "speeds fine",
+   "fault": "set up a dedicated 5GHz network for it",
+   "parts": null,
+   "dbm": "-17.9",
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T055",
+  "split": "dev",
+  "note": "checked ont, rx minus twenty three, bit low but within spec. cleaned the patch cord anyway, back to minus twenty point one. signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -20.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {},
+   "dbm": -20.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -20.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -20.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "checked ont",
+   "fault": "cleaned the patch cord",
+   "parts": null,
+   "dbm": "minus twenty point one",
+   "signoff": "signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T056",
+  "split": "dev",
+  "note": "installed new ONT, customer signed, light level was good",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "installed new ONT",
+   "fault": "installed new ONT",
+   "parts": "installed new ONT",
+   "dbm": null,
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T057",
+  "split": "dev",
+  "note": "fault is in the cabinet splitter not the port, beyond what I can do. escalated to network engineering with photos",
+  "gold": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "grounded": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "escalated to network engineering",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T058",
+  "split": "dev",
+  "note": "drop cable fine, ONT fine, router fine. customer's wifi extender was the problem, factory reset it and paired again. customer happy and signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "customer happy and signed",
+   "fault": "customer's wifi extender was the problem",
+   "parts": null,
+   "dbm": null,
+   "signoff": "signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T059",
+  "split": "dev",
+  "note": "break in the drop at the wall bracket, replaced 15 metres drop and 1 connector. minus eighteen point seven at ONT. customer was out, no sig",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 15,
+    "CONNECTOR": 1
+   },
+   "dbm": -18.7,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "CONNECTOR": 1,
+    "DROP_CABLE_M": 15
+   },
+   "dbm": -18.7,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 15,
+    "CONNECTOR": 1
+   },
+   "dbm": -18.7,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 15,
+    "CONNECTOR": 1
+   },
+   "dbm": -18.7,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "replaced 15 metres drop and 1 connector",
+   "fault": "break in the drop at the wall bracket",
+   "parts": "replaced 15 metres drop and 1 connector",
+   "dbm": "minus eighteen point seven at ONT",
+   "signoff": "no sig",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T060",
+  "split": "dev",
+  "note": "ONT dead. Replaced router and ONT. Customer signed. -19.6",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ROUTER": 1,
+    "ONT": 1
+   },
+   "dbm": -19.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1
+   },
+   "dbm": -19.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ROUTER": 1,
+    "ONT": 1
+   },
+   "dbm": -19.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ROUTER": 1,
+    "ONT": 1
+   },
+   "dbm": -19.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Replaced router and ONT",
+   "fault": "ONT dead",
+   "parts": "Replaced router and ONT",
+   "dbm": "-19.6",
+   "signoff": "Customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T061",
+  "split": "dev",
+  "note": "sorted the wifi",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "sorted",
+   "fault": "wifi",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T062",
+  "split": "dev",
+  "note": "cabinet port swap, light -20.4 at ont, customer signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -20.4,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -20.4,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -20.4,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -20.4,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "cabinet port swap",
+   "fault": "cabinet port swap",
+   "parts": null,
+   "dbm": "-20.4 at ont",
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T063",
+  "split": "dev",
+  "note": "no-one in, left a card, rang the number on the job, voicemail",
+  "gold": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "no-one in",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T064",
+  "split": "dev",
+  "note": "started the job but customer needed to leave for a hospital appointment, will need to rebook. nothing replaced yet, suspect the ONT",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "will need to rebook",
+   "fault": "suspect the ONT",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "customer needed to leave for a hospital appointment"
+  }
+ },
+ {
+  "id": "T065",
+  "split": "dev",
+  "note": "spliced the fibre at the joint box, used 4 splice protectors as there were two breaks. readings ok. cust signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "SPLICE_PROTECTOR": 4
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "SPLICE_PROTECTOR": 4
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "SPLICE_PROTECTOR": 4
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "SPLICE_PROTECTOR": 4
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "spliced the fibre at the joint box",
+   "fault": "two breaks",
+   "parts": "4 splice protectors",
+   "dbm": null,
+   "signoff": "cust signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T066",
+  "split": "dev",
+  "note": "router power brick was faulty, new PSU. tested -21.0 at the ONT for completeness. customer signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": -21.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": -21.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": -21.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": -21.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "tested -21.0 at the ONT",
+   "fault": "router power brick was faulty",
+   "parts": "new PSU",
+   "dbm": "-21.0",
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T067",
+  "split": "dev",
+  "note": "road dug up by gas company and our duct is exposed and cut. fibre break confirmed with the OTDR. passed to civils and network, multiple customers affected",
+  "gold": {
+   "outcome": "ESCALATED",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "ESCALATED",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "ESCALATED",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "ESCALATED",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "passed to civils and network",
+   "fault": "fibre break confirmed with the OTDR",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T068",
+  "split": "dev",
+  "note": "re-terminated the fibre at the faceplate with a new connector, old one was pulled out. -19.3, customer signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "CONNECTOR": 1
+   },
+   "dbm": -19.3,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "CONNECTOR": 1
+   },
+   "dbm": -19.3,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "CONNECTOR": 1
+   },
+   "dbm": -19.3,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "CONNECTOR": 1
+   },
+   "dbm": -19.3,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "re-terminated the fibre at the faceplate",
+   "fault": "old one was pulled out",
+   "parts": "new connector",
+   "dbm": "-19.3",
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T069",
+  "split": "dev",
+  "note": "weather too bad to climb, high winds, rebook for tomorrow. drop looks damaged at the pole",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": []
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "rebook for tomorrow",
+   "fault": "drop looks damaged at the pole",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "rebook for tomorrow"
+  }
+ },
+ {
+  "id": "T070",
+  "split": "dev",
+  "note": "ONT faulty, swapped ONT, swapped router, 2 patch cords, -20.8, got signature",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1,
+    "PATCH_CORD": 2
+   },
+   "dbm": -20.8,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1,
+    "PATCH_CORD": 2
+   },
+   "dbm": -20.8,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1,
+    "PATCH_CORD": 2
+   },
+   "dbm": -20.8,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1,
+    "PATCH_CORD": 2
+   },
+   "dbm": -20.8,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "swapped ONT",
+   "fault": "ONT faulty",
+   "parts": "swapped ONT, swapped router, 2 patch cords",
+   "dbm": "-20.8",
+   "signoff": "got signature",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T071",
+  "split": "dev",
+  "note": "tested, NFF, signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "tested",
+   "fault": "NFF",
+   "parts": null,
+   "dbm": null,
+   "signoff": "signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T072",
+  "split": "dev",
+  "note": "cust says no internet. ONT showing LOS. traced to the external box, connector dirty, cleaned it. LOS cleared. reading minus nineteen point four. no sig as customer was on a work call",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -19.4,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -19.4,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -19.4,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -19.4,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "LOS cleared",
+   "fault": "connector dirty",
+   "parts": null,
+   "dbm": "minus nineteen point four",
+   "signoff": "no sig as customer was on a work call",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T073",
+  "split": "dev",
+  "note": "No access - apartment intercom broken, couldnt reach customer",
+  "gold": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "No access",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T074",
+  "split": "dev",
+  "note": "fixed the drop, about 20m replaced, customer signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 20
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 20
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 20
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 20
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "fixed",
+   "fault": "drop",
+   "parts": "about 20m replaced",
+   "dbm": null,
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T075",
+  "split": "dev",
+  "note": "ONT faulty. ONT swapped, router swapped too, light level fine",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1,
+    "ROUTER": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "ONT swapped, router swapped too",
+   "fault": "ONT faulty",
+   "parts": "ONT swapped, router swapped too",
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T076",
+  "split": "dev",
+  "note": "issue was with the cabinet, cant fix from the house. escalated",
+  "gold": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "grounded": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "escalated",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T077",
+  "split": "dev",
+  "note": "escalated, not sure what is wrong",
+  "gold": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "rules": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "grounded": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "escalated",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T078",
+  "split": "dev",
+  "note": "all done",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "all done",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "T079",
+  "split": "dev",
+  "note": "replaced the faceplate, -18.8, signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "FACEPLATE": 1
+   },
+   "dbm": -18.8,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "FACEPLATE": 1
+   },
+   "dbm": -18.8,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {
+    "FACEPLATE": 1
+   },
+   "dbm": -18.8,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {
+    "FACEPLATE": 1
+   },
+   "dbm": -18.8,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "resolved",
+   "fault": null,
+   "parts": "replaced the faceplate",
+   "dbm": "-18.8",
+   "signoff": "signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "T080",
+  "split": "dev",
+  "note": "customer needs to be there for the internal work and wasnt, partner didnt know about the appointment. rebooked for saturday",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "missing": [
+    "fault"
+   ]
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": "INTERNAL_CABLING",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": []
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "missing": [
+    "fault"
+   ]
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "missing": [
+    "fault"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "rebooked for saturday",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "customer needs to be there for the internal work and wasnt"
+  }
+ },
+ {
+  "id": "H001",
+  "split": "holdout",
+  "note": "Gateway was toast, wouldnt boot past the white light. Put in a new gateway, CX e-signed. ONT RX reading -20.3",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": -20.3,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": -20.3,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "ROUTER": 1
+   },
+   "dbm": -20.3,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {},
+   "dbm": -20.3,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [
+   [
+    "parts",
+    "ROUTER"
+   ]
+  ],
+  "evidence": {
+   "outcome": "Put in a new gateway",
+   "fault": "Gateway was toast, wouldnt boot past the white light",
+   "parts": "Put in a new gateway",
+   "dbm": "ONT RX reading -20.3",
+   "signoff": "CX e-signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H002",
+  "split": "holdout",
+  "note": "Power adapter on the ONT failed. Swapped adapter. Rx -19.7. Sig obtained",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": -19.7,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {},
+   "dbm": -19.7,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1
+   },
+   "dbm": -19.7,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {},
+   "dbm": -19.7,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [
+   [
+    "parts",
+    "PSU"
+   ]
+  ],
+  "evidence": {
+   "outcome": "Swapped adapter",
+   "fault": "Power adapter on the ONT failed",
+   "parts": "Swapped adapter",
+   "dbm": "Rx -19.7",
+   "signoff": "Sig obtained",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H003",
+  "split": "holdout",
+  "note": "swapped two jumpers at the wall outlet, both had cracked ferrules. levels at minus eighteen point nine now. homeowner signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "PATCH_CORD": 2
+   },
+   "dbm": -18.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": -18.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "CONNECTOR": 2
+   },
+   "dbm": -18.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {},
+   "dbm": -18.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [
+   [
+    "parts",
+    "CONNECTOR"
+   ]
+  ],
+  "evidence": {
+   "outcome": "swapped two jumpers at the wall outlet",
+   "fault": "cracked ferrules",
+   "parts": "swapped two jumpers at the wall outlet",
+   "dbm": "minus eighteen point nine",
+   "signoff": "homeowner signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H004",
+  "split": "holdout",
+  "note": "drop wire torn off the house by a delivery truck. pulled in 35 meters of new drop, new pigtail at the ONT. RX minus 20.1, customer signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 35,
+    "CONNECTOR": 1
+   },
+   "dbm": -20.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "ONT": 1,
+    "DROP_CABLE_M": 35
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 35
+   },
+   "dbm": -20.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 35
+   },
+   "dbm": -20.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "new pigtail at the ONT. RX minus 20.1, customer signed",
+   "fault": "drop wire torn off the house by a delivery truck",
+   "parts": "pulled in 35 meters of new drop",
+   "dbm": "RX minus 20.1",
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H005",
+  "split": "holdout",
+  "note": "No one answered the door or the phone. Posted a calling card.",
+  "gold": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "No one answered the door or the phone.",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "H006",
+  "split": "holdout",
+  "note": "Premises locked, tenant on holiday per neighbour",
+  "gold": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Premises locked",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "H007",
+  "split": "holdout",
+  "note": "Saw LOS on the OLT side for the whole PON, 20+ customers. Handed to NOC as a network fault",
+  "gold": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Handed to NOC as a network fault",
+   "fault": "Saw LOS on the OLT side for the whole PON",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "H008",
+  "split": "holdout",
+  "note": "Whole PON tree showing down, handed over to the network team",
+  "gold": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "handed over to the network team",
+   "fault": "Whole PON tree showing down",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "H009",
+  "split": "holdout",
+  "note": "Inspected end faces with the scope, contaminated. Cleaned with a click cleaner, rx improved to -19.2. homeowner e-signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -19.2,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": -19.2,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -19.2,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": -19.2,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Cleaned with a click cleaner, rx improved to -19.2",
+   "fault": "contaminated",
+   "parts": null,
+   "dbm": "-19.2",
+   "signoff": "homeowner e-signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H010",
+  "split": "holdout",
+  "note": "Contaminated SC at the ONT, cleaned, now within spec",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "now within spec",
+   "fault": "Contaminated SC at the ONT",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "H011",
+  "split": "holdout",
+  "note": "Bad port on the splitter in the street cabinet, moved the circuit to a spare. Customer back online at -21.5 dBm. Customer signature taken",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -21.5,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -21.5,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -21.5,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": -21.5,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Customer back online",
+   "fault": "Bad port on the splitter in the street cabinet",
+   "parts": null,
+   "dbm": "-21.5 dBm",
+   "signoff": "Customer signature taken",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H012",
+  "split": "holdout",
+  "note": "modem fine, issue was the 2.4 band crowded, moved it to channel 11 and split the bands. customer satisfied",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "dropped": [
+   [
+    "signoff",
+    true
+   ]
+  ],
+  "evidence": {
+   "outcome": "customer satisfied",
+   "fault": "issue was the 2.4 band crowded",
+   "parts": null,
+   "dbm": null,
+   "signoff": "customer satisfied",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H013",
+  "split": "holdout",
+  "note": "Mesh node in the garage wasnt joining, re-paired it. Rx -18.4 for the record. CX signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": -18.4,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": -18.4,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": -18.4,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": {},
+   "dbm": -18.4,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "re-paired it",
+   "fault": "Mesh node in the garage wasnt joining",
+   "parts": null,
+   "dbm": "Rx -18.4",
+   "signoff": "CX signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H014",
+  "split": "holdout",
+  "note": "ONT unit faulty, no PON light. Replaced the unit. Customer signed. Didnt take a reading",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Replaced the unit",
+   "fault": "ONT unit faulty",
+   "parts": "Replaced the unit",
+   "dbm": "Didnt take a reading",
+   "signoff": "Customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H015",
+  "split": "holdout",
+  "note": "ONT replaced, rx minus nineteen. customer declined to sign",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -19.0,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -19,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -19.0,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": -19.0,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "ONT replaced",
+   "fault": "ONT replaced",
+   "parts": "ONT replaced",
+   "dbm": "rx minus nineteen",
+   "signoff": "customer declined to sign",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H016",
+  "split": "holdout",
+  "note": "Couldnt finish, the duct to the house is collapsed under the patio. Civil works required before re-pull",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CIVILS",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CIVILS",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CIVILS",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Couldnt finish",
+   "fault": "duct to the house is collapsed under the patio",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "Civil works required before re-pull"
+  }
+ },
+ {
+  "id": "H017",
+  "split": "holdout",
+  "note": "need a cherry picker and a second guy, the aerial drop is snagged on a tree over the road",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "need a cherry picker and a second guy",
+   "fault": "aerial drop is snagged on a tree",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "second guy"
+  }
+ },
+ {
+  "id": "H018",
+  "split": "holdout",
+  "note": "out of ONTs on the truck, the customer's one is dead. will return when stock arrives",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "will return when stock arrives",
+   "fault": "customer's one is dead",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "out of ONTs on the truck"
+  }
+ },
+ {
+  "id": "H019",
+  "split": "holdout",
+  "note": "HOA wont let us trench across the common area without approval. Drop is cut. Pending approval",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PERMISSION",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PERMISSION",
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PERMISSION",
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Pending approval",
+   "fault": "Drop is cut",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "HOA wont let us trench across the common area without approval"
+  }
+ },
+ {
+  "id": "H020",
+  "split": "holdout",
+  "note": "customer got called into work as i arrived, didnt start. suspected gateway issue. rebooked",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": "ROUTER_FAULT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "missing": []
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [
+   [
+    "signoff",
+    false
+   ]
+  ],
+  "evidence": {
+   "outcome": "didnt start",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "rebooked"
+  }
+ },
+ {
+  "id": "H021",
+  "split": "holdout",
+  "note": "Fusion spliced the break at the pedestal, 1 sleeve used. -20.6 after. Signed by CX",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "SPLICE_PROTECTOR": 1
+   },
+   "dbm": -20.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": -20.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {
+    "SPLICE_PROTECTOR": 1
+   },
+   "dbm": -20.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": -20.6,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [
+   [
+    "parts",
+    "SPLICE_PROTECTOR"
+   ]
+  ],
+  "evidence": {
+   "outcome": "Fusion spliced the break",
+   "fault": "Fusion spliced the break",
+   "parts": "1 sleeve used",
+   "dbm": "-20.6 after",
+   "signoff": "Signed by CX",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H022",
+  "split": "holdout",
+  "note": "break in the internal run behind the plasterboard, re-routed and spliced, 2 sleeves. signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "SPLICE_PROTECTOR": 2
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "SPLICE_PROTECTOR": 2
+   },
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "dropped": [
+   [
+    "parts",
+    "SPLICE_PROTECTOR"
+   ]
+  ],
+  "evidence": {
+   "outcome": "re-routed and spliced",
+   "fault": "break in the internal run behind the plasterboard",
+   "parts": "2 sleeves",
+   "dbm": null,
+   "signoff": "signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H023",
+  "split": "holdout",
+  "note": "All tests passed, levels -18 to -19, couldn't reproduce. NFF. No signature, customer out",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -19.0,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -19.0,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -18.0,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -18.0,
+   "signoff": false,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "All tests passed",
+   "fault": "NFF",
+   "parts": null,
+   "dbm": "-18 to -19",
+   "signoff": "No signature",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H024",
+  "split": "holdout",
+  "note": "done, customer happy",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "done",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "H025",
+  "split": "holdout",
+  "note": "new wall outlet fitted as the old one was cracked, rx -19.5",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "FACEPLATE": 1
+   },
+   "dbm": -19.5,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": -19.5,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {
+    "FACEPLATE": 1
+   },
+   "dbm": -19.5,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": {},
+   "dbm": -19.5,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "signoff"
+   ]
+  },
+  "dropped": [
+   [
+    "parts",
+    "FACEPLATE"
+   ]
+  ],
+  "evidence": {
+   "outcome": "new wall outlet fitted",
+   "fault": "old one was cracked",
+   "parts": "new wall outlet fitted",
+   "dbm": "rx -19.5",
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "H026",
+  "split": "holdout",
+  "note": "power adapter and gateway replaced after lightning strike. gateway was the dead one. rx -21.1. e-signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": {
+    "PSU": 1,
+    "ROUTER": 1
+   },
+   "dbm": -21.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": -21.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {
+    "PSU": 1,
+    "ROUTER": 1
+   },
+   "dbm": -21.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": {},
+   "dbm": -21.1,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [
+   [
+    "parts",
+    "PSU"
+   ],
+   [
+    "parts",
+    "ROUTER"
+   ]
+  ],
+  "evidence": {
+   "outcome": "gateway was the dead one",
+   "fault": "power adapter and gateway replaced",
+   "parts": "power adapter and gateway replaced",
+   "dbm": "rx -21.1",
+   "signoff": "e-signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H027",
+  "split": "holdout",
+  "note": "cleaned the bulkhead adapter in the external box, light came back. customer signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": {},
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "missing": [
+    "dbm"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "light came back",
+   "fault": "cleaned the bulkhead adapter",
+   "parts": null,
+   "dbm": null,
+   "signoff": "customer signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H028",
+  "split": "holdout",
+  "note": "Pedestal in the street has water in it, splitter damaged. Raised to network engineering.",
+  "gold": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Raised to network engineering",
+   "fault": "splitter damaged",
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ },
+ {
+  "id": "H029",
+  "split": "holdout",
+  "note": "No fault found on site, rx -20.0, speeds 930 down. customer e-signed",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -20.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -20.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -20.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": {},
+   "dbm": -20.0,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "No fault found on site",
+   "fault": "No fault found",
+   "parts": null,
+   "dbm": "rx -20.0",
+   "signoff": "customer e-signed",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H030",
+  "split": "holdout",
+  "note": "Replaced 2 pigtails and 10 meters of drop. Rx -19.9. CX signature obtained",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "CONNECTOR": 2,
+    "DROP_CABLE_M": 10
+   },
+   "dbm": -19.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 10
+   },
+   "dbm": -19.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 10
+   },
+   "dbm": -19.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": {
+    "DROP_CABLE_M": 10
+   },
+   "dbm": -19.9,
+   "signoff": true,
+   "revisit": null,
+   "missing": []
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "Replaced 2 pigtails and 10 meters of drop",
+   "fault": "10 meters of drop",
+   "parts": "Replaced 2 pigtails and 10 meters of drop",
+   "dbm": "-19.9",
+   "signoff": "CX signature obtained",
+   "revisit": null
+  }
+ },
+ {
+  "id": "H031",
+  "split": "holdout",
+  "note": "weather alert, lightning in the area, not safe to climb. rebook",
+  "gold": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": [
+    "fault"
+   ]
+  },
+  "rules": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": [
+    "fault"
+   ]
+  },
+  "llm": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": [
+    "fault"
+   ]
+  },
+  "grounded": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": {},
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "missing": [
+    "fault"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "rebook",
+   "fault": null,
+   "parts": null,
+   "dbm": null,
+   "signoff": null,
+   "revisit": "rebook"
+  }
+ },
+ {
+  "id": "H032",
+  "split": "holdout",
+  "note": "ONT swapped",
+  "gold": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "rules": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "llm": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "grounded": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": {
+    "ONT": 1
+   },
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "missing": [
+    "dbm",
+    "signoff"
+   ]
+  },
+  "dropped": [],
+  "evidence": {
+   "outcome": "swapped",
+   "fault": "ONT",
+   "parts": "ONT swapped",
+   "dbm": null,
+   "signoff": null,
+   "revisit": null
+  }
+ }
+]

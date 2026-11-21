@@ -1,0 +1,6 @@
+[
+ {"id":"T004","label":"\"cust happy\"","job":"FR-48402","kind":"wifi complaint","why":"A happy customer is not a signature, so the agent asks instead of guessing."},
+ {"id":"T012","label":"\"light level ok\"","job":"FR-48213","kind":"fibre repair"},
+ {"id":"T002","label":"Squirrels on the pole run","job":"FR-48377","kind":"fibre repair"},
+ {"id":"T029","label":"Ran out of parts","job":"FR-48455","kind":"fibre repair"}
+]

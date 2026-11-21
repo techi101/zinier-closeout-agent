@@ -1,0 +1,8 @@
+.env
+*.key
+__pycache__/
+node_modules/
+.vercel
+screens_tmp/
+research/
+eval/results_run.log

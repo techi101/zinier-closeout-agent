@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Close-out Agent for Zinier</title>
+<meta name="description" content="A working job close-out agent for fibre field technicians, tested on 80 labelled notes, with the roadmap, epics, data spec and analytics plan to ship it. Built by Nitesh Kumar Yadav.">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700&f[]=switzer@400,500,600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231D1B18'/%3E%3Cpath d='M6 22 C14 22 14 10 26 10' stroke='%23FF4C24' stroke-width='3' fill='none'/%3E%3Cpath d='M6 16 C14 16 16 22 26 22' stroke='%232F6BD8' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top-in">
+    <span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 22 C14 22 14 10 29 10" stroke="#FF4C24" stroke-width="3" fill="none"/><path d="M3 15 C14 15 16 22 29 22" stroke="#2F6BD8" stroke-width="3" fill="none"/></svg>Close-out agent</span>
+    <nav aria-label="Sections">
+      <a href="#results">Results</a><a href="#roadmap">Roadmap</a><a href="#epics">Epics</a><a href="#data">Data spec</a><a href="#analytics">Analytics</a>
+    </nav>
+    <a class="gh" href="https://github.com/techi101/zinier-closeout-agent">Code</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <svg class="ribbon" viewBox="0 0 900 520" preserveAspectRatio="none" aria-hidden="true" id="ribbon"></svg>
+  <div class="wrap">
+    <p class="kicker">A product proof for Zinier's Founder's Office, by Nitesh Kumar Yadav</p>
+    <h1>The technician says what they did. The agent writes the job record and asks for what's missing.</h1>
+    <p class="lede">Zinier's agents page promises technicians can "simply describe the work" and the agent completes the job record, "prompting for additional information as needed". I built a working version for fibre broadband repairs and measured where it goes wrong.</p>
+  </div>
+
+  <div class="wrap">
+    <div class="console" id="console">
+      <div class="console-bar">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="console-title" id="jobTitle">Job FR-48213, fibre repair, close-out</span>
+        <span class="replay-wrap"><button class="replay" id="replay" type="button">Replay</button></span>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Example notes" id="tabs"></div>
+      <div class="stage" id="stage">
+        <div class="pane note-pane">
+          <h2 class="pane-h">Technician's note</h2>
+          <div class="wave" aria-hidden="true" id="wave"></div>
+          <p class="note" id="note"></p>
+          <p class="note-meta" id="noteMeta">Synthetic note written for this test, not customer data.</p>
+        </div>
+        <div class="pane rec-pane">
+          <h2 class="pane-h">Job record <span class="muted" id="recState">filling</span></h2>
+          <dl class="rec" id="rec"></dl>
+          <div class="asks" id="asks" hidden>
+            <h3>Before this job can close, the agent asks</h3>
+            <ol id="askList"></ol>
+          </div>
+          <p class="dropped" id="dropped" hidden></p>
+        </div>
+        <svg class="strands" id="strands" aria-hidden="true"></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="results">
+  <div class="wrap narrow">
+    <h2 class="h2">Tested on 112 hand-labelled notes</h2>
+    <div id="finding"></div>
+  </div>
+  <div class="wrap">
+    <div class="ex-controls" role="group" aria-label="Which notes" id="splitCtl"></div>
+    <div class="charts" id="charts"></div>
+    <p class="fine" id="method"></p>
+    <details class="explorer">
+      <summary>Look at every note and what each system did</summary>
+      <div class="ex-controls" role="group" aria-label="Filter notes">
+        <button type="button" class="chip on" data-f="interesting">Where the systems disagree</button>
+        <button type="button" class="chip" data-f="missing">Notes with missing data</button>
+        <button type="button" class="chip" data-f="all">All 112</button>
+      </div>
+      <div class="ex-list" id="exList"></div>
+    </details>
+  </div>
+</section>
+
+<section class="sec alt" id="roadmap">
+  <div class="wrap">
+    <h2 class="h2">Roadmap</h2>
+    <p class="lede-2 narrow-p">One agent, one job type, one customer first. Each stage has an exit test so the roadmap can correct itself.</p>
+    <ol class="road">
+      <li>
+        <h3>Now <span>weeks 0 to 6</span></h3>
+        <p class="goal">Ship close-out for fibre repair jobs at one telecom customer, with a confirm screen.</p>
+        <ul>
+          <li>Extraction to the job record, every value tied to the phrase it came from</li>
+          <li>Grounding check on light level and sign-off, the two fields where a guess does harm</li>
+          <li>Required-field policy per job type and outcome, held as config</li>
+          <li>Events below shipped on day one, before the model is tuned</li>
+        </ul>
+        <p class="exit"><b>Exit test:</b> back-office correction rate on agent-filled fields is no worse than the form, over 2 weeks.</p>
+      </li>
+      <li>
+        <h3>Next <span>weeks 6 to 12</span></h3>
+        <p class="goal">Make it part of the job, not a side panel.</p>
+        <ul>
+          <li>Voice capture that works offline and syncs later, like the mobile app already does</li>
+          <li>Confirmed parts write to inventory against the task and the van</li>
+          <li>Customer custom fields through Studio, no code</li>
+          <li>Weekly eval on a golden set built from back-office corrections</li>
+        </ul>
+        <p class="exit"><b>Exit test:</b> second customer live on config only, no code change.</p>
+      </li>
+      <li>
+        <h3>Later <span>quarter 2</span></h3>
+        <p class="goal">Use clean close-out data to move the KPIs customers set in Goals.</p>
+        <ul>
+          <li>Revisit reasons and fault codes feed Insights: repeat visits, first-time fix</li>
+          <li>Parts-shortage revisits feed van stock planning</li>
+          <li>French, Spanish and German notes, matching the site's languages</li>
+        </ul>
+        <p class="exit"><b>Exit test:</b> revisits caused by missing parts fall at the pilot customer.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="epics">
+  <div class="wrap">
+    <h2 class="h2">Epics and stories</h2>
+    <p class="lede-2 narrow-p">Written the way they would go into Jira. Story points are my estimate for a team of 2 engineers and should be re-pointed with them.</p>
+    <div class="epics" id="epicList"></div>
+  </div>
+</section>
+
+<section class="sec alt" id="data">
+  <div class="wrap">
+    <h2 class="h2">Data spec</h2>
+    <p class="lede-2 narrow-p">What the agent needs, where it comes from, and what it writes back. The colour on each field is the same strand colour used in the demo above.</p>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <caption class="sr">Job record fields</caption>
+        <thead><tr><th>Field</th><th>Type</th><th>Required when</th><th>Comes from</th><th>Written to</th></tr></thead>
+        <tbody id="fieldRows"></tbody>
+      </table>
+    </div>
+    <div class="two">
+      <div>
+        <h3 class="h3">Entities</h3>
+        <dl class="ent">
+          <dt>closeout_session</dt><dd>One per close-out attempt. session_id, task_id, technician_id, job_type, channel (voice or chat), offline flag, model_version, prompt_version, policy_version, started_at, submitted_at.</dd>
+          <dt>closeout_field</dt><dd>One row per field per session. Value, source (agent, technician, back office), evidence span start and end, grounded true or false, confirmed by technician.</dd>
+          <dt>closeout_prompt</dt><dd>One row per question asked. Field, question text, answered, answer channel, seconds to answer.</dd>
+          <dt>note_transcript</dt><dd>Text, speech-to-text confidence, language. Raw audio stays in the lake with a retention rule agreed with Legal, because notes contain customer names and addresses.</dd>
+          <dt>field_policy</dt><dd>Required fields by job type and outcome. Versioned config that Studio edits, so a consultant can change it without a release.</dd>
+        </dl>
+      </div>
+      <div>
+        <h3 class="h3">Sources read at session start</h3>
+        <ul class="plain">
+          <li>Task record from FSM: job type, asset (ONT serial), SLA due time, schedule slot</li>
+          <li>Van stock from Parts and Inventory, to check that fitted parts exist</li>
+          <li>Field policy for this job type</li>
+          <li>Last close-out on the same asset, to spot a repeat visit</li>
+        </ul>
+        <h3 class="h3">Warehouse</h3>
+        <ul class="plain">
+          <li><code>fact_closeout_session</code> grain: one session</li>
+          <li><code>fact_closeout_field</code> grain: session by field</li>
+          <li><code>dim_field_policy</code>, <code>dim_model_version</code> slowly changing</li>
+          <li><code>mart_closeout_quality_daily</code> by customer, job type, model version</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="analytics">
+  <div class="wrap">
+    <h2 class="h2">Analytics for the agent</h2>
+    <p class="lede-2 narrow-p">The one number that tells the truth is the back-office correction rate: fields someone in the office had to fix after the job closed. Everything else explains why it moved.</p>
+    <div class="tbl-wrap">
+      <table class="tbl metrics">
+        <caption class="sr">Metrics</caption>
+        <thead><tr><th>Metric</th><th>Definition</th><th>Built from events</th></tr></thead>
+        <tbody id="metricRows"></tbody>
+      </table>
+    </div>
+    <h3 class="h3">Event schema</h3>
+    <div class="events" id="eventList"></div>
+    <pre class="code" aria-label="Example event"><code id="eventJson"></code></pre>
+  </div>
+</section>
+
+<section class="sec alt" id="sources">
+  <div class="wrap narrow">
+    <h2 class="h2">What this is built on</h2>
+    <ul class="src">
+      <li><a href="https://www.zinier.com/platform/intelligence/agents">zinier.com, Agents</a>: technicians "describe the work", the agent "completes the job record in the approved format, prompting for additional information as needed". Agents are task-focused and work from live FSM data.</li>
+      <li><a href="https://www.zinier.com/blog/building-ai-agents-that-work-with-your-real-data">Zinier blog, Building AI agents that work with your real data</a>: Andrew Wolf on custom fields, and on using rules where rules are enough because Gen AI is "not 100% deterministic". The grounding check here follows that idea.</li>
+      <li><a href="https://www.zinier.com/industries/telecommunications">zinier.com, Telecommunications</a>: "the evidence you rely on is incomplete" for SLA reporting, and jobs that take two visits instead of one.</li>
+      <li><a href="https://www.zinier.com/platform/core/mobile-task-execution">Mobile Task Execution</a> (offline support) and <a href="https://www.zinier.com/platform/core/inventory-parts">Parts and Inventory</a> (link parts to tasks).</li>
+      <li><a href="https://job-boards.greenhouse.io/zinier/jobs/4470426009">The role</a>: own the data and AI roadmap, write epics with acceptance criteria, define analytics for agent interfaces.</li>
+    </ul>
+    <p class="fine">All 112 notes are synthetic, written and labelled by me to look like real fibre repair notes. I also wrote the rules baseline, which is why 32 holdout notes were written only after the rules were frozen in git. Treat the numbers as a first look, not a benchmark. Code, data, prompts and raw model outputs are in the <a href="https://github.com/techi101/zinier-closeout-agent">repo</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p><b>Nitesh Kumar Yadav</b>, final-year B.Tech, ECE (AI and ML), NSUT Delhi. I build agents and the evals around them.</p>
+    <p><a href="https://github.com/techi101">github.com/techi101</a></p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

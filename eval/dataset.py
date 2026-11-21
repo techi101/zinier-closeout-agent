@@ -96,6 +96,44 @@ ROWS = [
  ("customer needs to be there for the internal work and wasnt, partner didnt know about the appointment. rebooked for saturday", V, None, {}, None, None, "CUSTOMER_UNAVAILABLE"),
 ]
 
+
+# Holdout: written AFTER the rules baseline was frozen (git commit 4914d7f), in other technicians' vocabulary
+# (gateway, jumper, pigtail, power adapter, OLT, e-signed). Nothing below was used to write rules or prompts.
+HOLDOUT_ROWS = [
+ ("Gateway was toast, wouldnt boot past the white light. Put in a new gateway, CX e-signed. ONT RX reading -20.3", R, "ROUTER_FAULT", {"ROUTER": 1}, -20.3, T, None),
+ ("Power adapter on the ONT failed. Swapped adapter. Rx -19.7. Sig obtained", R, "PSU_FAULT", {"PSU": 1}, -19.7, T, None),
+ ("swapped two jumpers at the wall outlet, both had cracked ferrules. levels at minus eighteen point nine now. homeowner signed", R, "INTERNAL_CABLING", {"PATCH_CORD": 2}, -18.9, T, None),
+ ("drop wire torn off the house by a delivery truck. pulled in 35 meters of new drop, new pigtail at the ONT. RX minus 20.1, customer signed", R, "DROP_DAMAGE", {"DROP_CABLE_M": 35, "CONNECTOR": 1}, -20.1, T, None),
+ ("No one answered the door or the phone. Posted a calling card.", N, None, {}, None, None, None),
+ ("Premises locked, tenant on holiday per neighbour", N, None, {}, None, None, None),
+ ("Saw LOS on the OLT side for the whole PON, 20+ customers. Handed to NOC as a network fault", E, "OUTAGE", {}, None, None, None),
+ ("Whole PON tree showing down, handed over to the network team", E, "OUTAGE", {}, None, None, None),
+ ("Inspected end faces with the scope, contaminated. Cleaned with a click cleaner, rx improved to -19.2. homeowner e-signed", R, "DIRTY_CONNECTOR", {}, -19.2, T, None),
+ ("Contaminated SC at the ONT, cleaned, now within spec", R, "DIRTY_CONNECTOR", {}, None, None, None),
+ ("Bad port on the splitter in the street cabinet, moved the circuit to a spare. Customer back online at -21.5 dBm. Customer signature taken", R, "CABINET_PORT", {}, -21.5, T, None),
+ ("modem fine, issue was the 2.4 band crowded, moved it to channel 11 and split the bands. customer satisfied", R, "WIFI_CONFIG", {}, None, None, None),
+ ("Mesh node in the garage wasnt joining, re-paired it. Rx -18.4 for the record. CX signed", R, "WIFI_CONFIG", {}, -18.4, T, None),
+ ("ONT unit faulty, no PON light. Replaced the unit. Customer signed. Didnt take a reading", R, "ONT_FAULT", {"ONT": 1}, None, T, None),
+ ("ONT replaced, rx minus nineteen. customer declined to sign", R, "ONT_FAULT", {"ONT": 1}, -19.0, F_, None),
+ ("Couldnt finish, the duct to the house is collapsed under the patio. Civil works required before re-pull", V, "DROP_DAMAGE", {}, None, None, "CIVILS"),
+ ("need a cherry picker and a second guy, the aerial drop is snagged on a tree over the road", V, "DROP_DAMAGE", {}, None, None, "SECOND_TECH"),
+ ("out of ONTs on the truck, the customer's one is dead. will return when stock arrives", V, "ONT_FAULT", {}, None, None, "PARTS"),
+ ("HOA wont let us trench across the common area without approval. Drop is cut. Pending approval", V, "DROP_DAMAGE", {}, None, None, "PERMISSION"),
+ ("customer got called into work as i arrived, didnt start. suspected gateway issue. rebooked", V, "ROUTER_FAULT", {}, None, None, "CUSTOMER_UNAVAILABLE"),
+ ("Fusion spliced the break at the pedestal, 1 sleeve used. -20.6 after. Signed by CX", R, "FIBRE_BREAK", {"SPLICE_PROTECTOR": 1}, -20.6, T, None),
+ ("break in the internal run behind the plasterboard, re-routed and spliced, 2 sleeves. signed", R, "INTERNAL_CABLING", {"SPLICE_PROTECTOR": 2}, None, T, None),
+ ("All tests passed, levels -18 to -19, couldn't reproduce. NFF. No signature, customer out", R, "NO_FAULT_FOUND", {}, -19.0, F_, None),
+ ("done, customer happy", R, None, {}, None, None, None),
+ ("new wall outlet fitted as the old one was cracked, rx -19.5", R, "INTERNAL_CABLING", {"FACEPLATE": 1}, -19.5, None, None),
+ ("power adapter and gateway replaced after lightning strike. gateway was the dead one. rx -21.1. e-signed", R, "ROUTER_FAULT", {"PSU": 1, "ROUTER": 1}, -21.1, T, None),
+ ("cleaned the bulkhead adapter in the external box, light came back. customer signed", R, "DIRTY_CONNECTOR", {}, None, T, None),
+ ("Pedestal in the street has water in it, splitter damaged. Raised to network engineering.", E, "CABINET_PORT", {}, None, None, None),
+ ("No fault found on site, rx -20.0, speeds 930 down. customer e-signed", R, "NO_FAULT_FOUND", {}, -20.0, T, None),
+ ("Replaced 2 pigtails and 10 meters of drop. Rx -19.9. CX signature obtained", R, "DROP_DAMAGE", {"CONNECTOR": 2, "DROP_CABLE_M": 10}, -19.9, T, None),
+ ("weather alert, lightning in the area, not safe to climb. rebook", V, None, {}, None, None, "OTHER"),
+ ("ONT swapped", R, "ONT_FAULT", {"ONT": 1}, None, None, None),
+]
+
 FIBRE_READING_REQUIRED = {"FIBRE_BREAK", "DROP_DAMAGE", "INTERNAL_CABLING", "DIRTY_CONNECTOR",
                           "CABINET_PORT", "ONT_FAULT", "NO_FAULT_FOUND"}
 
@@ -115,10 +153,12 @@ def missing_fields(rec):
     return miss
 
 
-def load():
+def load(split="all"):
     out = []
-    for i, (note, o, f, p, d, s, rv) in enumerate(ROWS, 1):
-        rec = dict(id=f"T{i:03d}", note=note, outcome=o, fault=f, parts=p, dbm=d, signoff=s, revisit=rv)
+    rows = [("T", i, r) for i, r in enumerate(ROWS, 1)] + [("H", i, r) for i, r in enumerate(HOLDOUT_ROWS, 1)]
+    for pre, i, (note, o, f, p, d, s, rv) in rows:
+        if split == "dev" and pre != "T" or split == "holdout" and pre != "H": continue
+        rec = dict(id=f"{pre}{i:03d}", split="dev" if pre == "T" else "holdout", note=note, outcome=o, fault=f, parts=p, dbm=d, signoff=s, revisit=rv)
         assert o in OUTCOMES and (f is None or f in FAULTS) and all(k in PARTS for k in p) and (rv is None or rv in REVISIT)
         rec["missing"] = missing_fields(rec)
         out.append(rec)
@@ -129,4 +169,4 @@ if __name__ == "__main__":
     data = load()
     pathlib.Path(__file__).with_name("tickets.json").write_text(json.dumps(data, indent=1))
     from collections import Counter
-    print(len(data), Counter(r["outcome"] for r in data), sum(bool(r["missing"]) for r in data), "with missing")
+    print(len(data), Counter(r["split"] for r in data), Counter(r["outcome"] for r in data), sum(bool(r["missing"]) for r in data), "with missing")

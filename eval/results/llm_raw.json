@@ -1,0 +1,2512 @@
+{
+ "T001": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ONT",
+     "qty": 1
+    }
+   ],
+   "dbm": -19.8,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "swapped ONT, new unit synced first time",
+    "fault": "ONT dead no lights at all",
+    "parts": "swapped ONT",
+    "dbm": "rx -19.8 dBm",
+    "signoff": "customer signed on the tablet",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.53,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T002": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": [
+    {
+     "sku": "DROP_CABLE_M",
+     "qty": 40
+    },
+    {
+     "sku": "CONNECTOR",
+     "qty": 1
+    }
+   ],
+   "dbm": -20.5,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "replaced 40m of drop and fitted a new connector",
+    "fault": "drop cable chewed thru by squirrels on the pole run",
+    "parts": "replaced 40m of drop and fitted a new connector",
+    "dbm": "minus twenty point five",
+    "signoff": "cust signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.46,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T003": {
+  "raw": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Customer not in.",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 1.13,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T004": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": [],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "cust happy",
+    "fault": "wifi dropping upstairs",
+    "parts": null,
+    "dbm": null,
+    "signoff": "cust happy"
+   }
+  },
+  "latency_s": 1.39,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T005": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": [],
+   "dbm": -18.6,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "cleaned the connector",
+    "fault": "filthy",
+    "parts": null,
+    "dbm": "-18.6",
+    "signoff": "signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.54,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T006": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "INTERNAL_CABLING",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "evidence": {
+    "outcome": "back tomorrow",
+    "fault": "fibre snapped in the loft",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "i dont have enough drop on the van"
+   }
+  },
+  "latency_s": 2.87,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T007": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": [],
+   "dbm": -21.2,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "ont back up",
+    "fault": "port at the cabinet is dead",
+    "parts": null,
+    "dbm": "-21.2",
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 1.91,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T008": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": [
+    {
+     "sku": "PSU",
+     "qty": 1
+    }
+   ],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "all green",
+    "fault": "it was the power supply",
+    "parts": "swapped psu only",
+    "dbm": null,
+    "signoff": "customer signed off",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.28,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T009": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": [],
+   "dbm": -19,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Tested everything, line is fine",
+    "fault": "no fault found",
+    "parts": null,
+    "dbm": "-19 at ONT",
+    "signoff": "cust signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 2.16,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T010": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CIVILS",
+   "evidence": {
+    "outcome": "needs civils to dig before we can pull new cable",
+    "fault": "drop inside is damaged",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "needs civils to dig"
+   }
+  },
+  "latency_s": 2.24,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T011": {
+  "raw": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "escalated to network ops",
+    "fault": "whole street is down",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 2.95,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T012": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": [
+    {
+     "sku": "PATCH_CORD",
+     "qty": 2
+    },
+    {
+     "sku": "FACEPLATE",
+     "qty": 1
+    }
+   ],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "replaced 2 patch leads and the faceplate",
+    "fault": "customer had yanked the cable out of the wall",
+    "parts": "replaced 2 patch leads and the faceplate",
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 1.08,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T013": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ONT",
+     "qty": 1
+    }
+   ],
+   "dbm": null,
+   "signoff": false,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "evidence": {
+    "outcome": "coming back thurs",
+    "fault": "ONT swapped",
+    "parts": "ONT swapped",
+    "dbm": null,
+    "signoff": "didnt get to test",
+    "revisit": "customer had to leave for school pickup"
+   }
+  },
+  "latency_s": 1.58,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T014": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PERMISSION",
+   "evidence": {
+    "outcome": "cant run new drop until we get permission",
+    "fault": "old drop is cracked at the entry point",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "landlord wont allow drilling the external wall so cant run new drop until we get permission"
+   }
+  },
+  "latency_s": 28.69,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T015": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "evidence": {
+    "outcome": "rebooking",
+    "fault": "drop is sagging and damaged at the pole",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "needs a two man crew"
+   }
+  },
+  "latency_s": 5.25,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T016": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "everything working when i got here",
+    "fault": "no fault found",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 3.28,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T017": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": [
+    {
+     "sku": "ROUTER",
+     "qty": 1
+    }
+   ],
+   "dbm": -22.1,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "swapped for a new hub",
+    "fault": "router was in a boot loop",
+    "parts": "swapped for a new hub",
+    "dbm": "rx -22.1",
+    "signoff": "got sig",
+    "revisit": null
+   }
+  },
+  "latency_s": 17.88,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T018": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ONT",
+     "qty": 1
+    },
+    {
+     "sku": "ROUTER",
+     "qty": 1
+    }
+   ],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "replaced the ONT and also gave them a new router",
+    "fault": "ONT had water damage",
+    "parts": "replaced the ONT and also gave them a new router",
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 14.13,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T019": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": [
+    {
+     "sku": "SPLICE_PROTECTOR",
+     "qty": 2
+    }
+   ],
+   "dbm": -20.9,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "spliced it",
+    "fault": "Fibre break",
+    "parts": "2 splice protectors",
+    "dbm": "-20.9",
+    "signoff": "Customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 36.72,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T020": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": [
+    {
+     "sku": "CONNECTOR",
+     "qty": 1
+    }
+   ],
+   "dbm": -19.4,
+   "signoff": false,
+   "revisit": null,
+   "evidence": {
+    "outcome": "fitted a new field connector. -19.4 now",
+    "fault": "connector end face was scratched",
+    "parts": "fitted a new field connector",
+    "dbm": "-19.4 now",
+    "signoff": "customer refused to sign",
+    "revisit": null
+   }
+  },
+  "latency_s": 6.01,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T021": {
+  "raw": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "nobody home",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 14.63,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T022": {
+  "raw": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "access refused",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 1.57,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T023": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": [],
+   "dbm": -17.5,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "600+ on 5GHz now",
+    "fault": "laptop was stuck on 2.4GHz, turned on band steering",
+    "parts": null,
+    "dbm": "light level -17.5",
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.03,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T024": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": [
+    {
+     "sku": "PSU",
+     "qty": 1
+    }
+   ],
+   "dbm": -18.2,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "ont lit up",
+    "fault": "ONT power supply had packed in",
+    "parts": "new psu fitted",
+    "dbm": "minus 18.2",
+    "signoff": "signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.48,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T025": {
+  "raw": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": [],
+   "dbm": -30,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "raised to network to check the cabinet port",
+    "fault": "raised to network to check the cabinet port",
+    "parts": null,
+    "dbm": "-30",
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 3.05,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T026": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ONT",
+     "qty": 1
+    }
+   ],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Replaced ONT",
+    "fault": "Replaced ONT",
+    "parts": "Replaced ONT",
+    "dbm": null,
+    "signoff": "Signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.96,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T027": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "fixed",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 1.78,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T028": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": [
+    {
+     "sku": "PATCH_CORD",
+     "qty": 1
+    }
+   ],
+   "dbm": -20.0,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "new patch lead fitted",
+    "fault": "fibre patch lead from the wall to the ONT was kinked",
+    "parts": "new patch lead fitted",
+    "dbm": "-20",
+    "signoff": "cust signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 2.14,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T029": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "evidence": {
+    "outcome": "back tmrw first thing",
+    "fault": "found the break in the drop at the pole",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "ran out of splice protectors"
+   }
+  },
+  "latency_s": 1.36,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T030": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": [
+    {
+     "sku": "ROUTER",
+     "qty": 1
+    }
+   ],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "router swapped",
+    "fault": "router swapped",
+    "parts": "router swapped",
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 2.25,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T031": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": [
+    {
+     "sku": "DROP_CABLE_M",
+     "qty": 25
+    },
+    {
+     "sku": "CONNECTOR",
+     "qty": 1
+    }
+   ],
+   "dbm": -19.0,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "we're getting minus nineteen at the ONT now, customer signed for it",
+    "fault": "the drop had come off the hook on the wall and snapped",
+    "parts": "ran a new drop, about 25 metres, put a new connector on",
+    "dbm": "minus nineteen at the ONT",
+    "signoff": "customer signed for it",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.59,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T032": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": [],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "issue was the customers own mesh system fighting with our wifi. turned off our wifi, mesh in bridge mode",
+    "fault": "customers own mesh system fighting with our wifi",
+    "parts": null,
+    "dbm": null,
+    "signoff": "sig captured",
+    "revisit": null
+   }
+  },
+  "latency_s": 3.86,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T033": {
+  "raw": {
+   "outcome": "NO_ACCESS",
+   "fault": "NO_FAULT_FOUND",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Customer cancelled at the door",
+    "fault": "said it started working this morning",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 1.24,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T034": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ONT",
+     "qty": 1
+    }
+   ],
+   "dbm": -21.7,
+   "signoff": false,
+   "revisit": null,
+   "evidence": {
+    "outcome": "ONT replaced",
+    "fault": "ONT replaced",
+    "parts": "ONT replaced",
+    "dbm": "-21.7 at ONT",
+    "signoff": "customer wasnt around to sign",
+    "revisit": null
+   }
+  },
+  "latency_s": 2.25,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T035": {
+  "raw": {
+   "outcome": "ESCALATED",
+   "fault": "FIBRE_BREAK",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "needs civils",
+    "fault": "break somewhere in the underground section",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 2.84,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T036": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": [],
+   "dbm": -19.1,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "cleaned both ends",
+    "fault": "dirty connector",
+    "parts": "no new parts",
+    "dbm": "-19.1",
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.28,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T037": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": [
+    {
+     "sku": "PSU",
+     "qty": 1
+    },
+    {
+     "sku": "PATCH_CORD",
+     "qty": 1
+    }
+   ],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "swapped it",
+    "fault": "ONT power supply was dead",
+    "parts": "swapped it, also replaced 1 patch cord",
+    "dbm": null,
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.12,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T038": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": [],
+   "dbm": -18.9,
+   "signoff": false,
+   "revisit": null,
+   "evidence": {
+    "outcome": "re-patched to spare port 7",
+    "fault": "cab port fault",
+    "parts": null,
+    "dbm": "-18.9",
+    "signoff": "no signature",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.36,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T039": {
+  "raw": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "gate locked, no answer on the phone",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 2.07,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T040": {
+  "raw": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "passed it to NOC",
+    "fault": "its an area outage",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 1.01,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T041": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": [
+    {
+     "sku": "DROP_CABLE_M",
+     "qty": 30
+    },
+    {
+     "sku": "CONNECTOR",
+     "qty": 2
+    }
+   ],
+   "dbm": -21.3,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "replaced 30m drop cable",
+    "fault": "old drop was cut by a hedge trimmer",
+    "parts": "replaced 30m drop cable and 2 connectors",
+    "dbm": "minus twenty one point three",
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.69,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T042": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": [],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "been stable for 30 mins",
+    "fault": "router keeps rebooting",
+    "parts": "no parts",
+    "dbm": null,
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.07,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T043": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": [
+    {
+     "sku": "FACEPLATE",
+     "qty": 1
+    },
+    {
+     "sku": "PATCH_CORD",
+     "qty": 1
+    }
+   ],
+   "dbm": -20.2,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "new faceplate and a patch cord fitted",
+    "fault": "wall faceplate smashed",
+    "parts": "new faceplate and a patch cord fitted",
+    "dbm": "-20.2",
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 1.55,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T044": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "evidence": {
+    "outcome": "raised for a 2 person crew",
+    "fault": "drop is on a tall pole",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "raised for a 2 person crew"
+   }
+  },
+  "latency_s": 1.07,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T045": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "evidence": {
+    "outcome": "will come back once it arrives",
+    "fault": "ONT faulty",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "ordered one, will come back once it arrives"
+   }
+  },
+  "latency_s": 1.33,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T046": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": [],
+   "dbm": -18.5,
+   "signoff": false,
+   "revisit": null,
+   "evidence": {
+    "outcome": "no fault found",
+    "fault": "no fault found",
+    "parts": null,
+    "dbm": "light -18.5",
+    "signoff": "did not sign",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.48,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T047": {
+  "raw": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": false,
+   "revisit": null,
+   "evidence": {
+    "outcome": "customer was rude and asked me to leave before i could start",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": "nothing done",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.43,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T048": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": [
+    {
+     "sku": "ROUTER",
+     "qty": 1
+    }
+   ],
+   "dbm": -20.6,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "swapped router",
+    "fault": "swapped router",
+    "parts": "swapped router",
+    "dbm": "-20.6",
+    "signoff": "signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.84,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T049": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ONT",
+     "qty": 1
+    },
+    {
+     "sku": "PSU",
+     "qty": 1
+    }
+   ],
+   "dbm": -19.9,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "replaced the ONT and its PSU",
+    "fault": "power surge killed the ONT",
+    "parts": "replaced the ONT and its PSU",
+    "dbm": "light -19.9",
+    "signoff": "customer signed on the app",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.22,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T050": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "all good now",
+    "fault": "cleaned connector",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 1.41,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T051": {
+  "raw": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PERMISSION",
+   "evidence": {
+    "outcome": "building has no riser access tonight, management office closed",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "need the building manager to sign the wayleave"
+   }
+  },
+  "latency_s": 5.88,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T052": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "OUTAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "evidence": {
+    "outcome": "rebook",
+    "fault": "power cut on the whole road",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "rebook"
+   }
+  },
+  "latency_s": 8.5,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T053": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": [
+    {
+     "sku": "SPLICE_PROTECTOR",
+     "qty": 1
+    }
+   ],
+   "dbm": -22.4,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "re-routed the internal cable, added one splice protector where I re-spliced",
+    "fault": "bent the internal fibre too tight",
+    "parts": "added one splice protector",
+    "dbm": "-22.4",
+    "signoff": "signature taken",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.53,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T054": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": [],
+   "dbm": -17.9,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "speeds fine",
+    "fault": "set up a dedicated 5GHz network for it",
+    "parts": null,
+    "dbm": "-17.9",
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 3.33,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T055": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": [],
+   "dbm": -20.1,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "checked ont",
+    "fault": "cleaned the patch cord",
+    "parts": null,
+    "dbm": "minus twenty point one",
+    "signoff": "signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 29.91,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T056": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ONT",
+     "qty": 1
+    }
+   ],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "installed new ONT",
+    "fault": "installed new ONT",
+    "parts": "installed new ONT",
+    "dbm": null,
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.72,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T057": {
+  "raw": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "escalated to network engineering",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 2.5,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T058": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": [],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "customer happy and signed",
+    "fault": "customer's wifi extender was the problem",
+    "parts": null,
+    "dbm": null,
+    "signoff": "signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.63,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T059": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": [
+    {
+     "sku": "DROP_CABLE_M",
+     "qty": 15
+    },
+    {
+     "sku": "CONNECTOR",
+     "qty": 1
+    }
+   ],
+   "dbm": -18.7,
+   "signoff": false,
+   "revisit": null,
+   "evidence": {
+    "outcome": "replaced 15 metres drop and 1 connector",
+    "fault": "break in the drop at the wall bracket",
+    "parts": "replaced 15 metres drop and 1 connector",
+    "dbm": "minus eighteen point seven at ONT",
+    "signoff": "no sig",
+    "revisit": null
+   }
+  },
+  "latency_s": 2.16,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T060": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ROUTER",
+     "qty": 1
+    },
+    {
+     "sku": "ONT",
+     "qty": 1
+    }
+   ],
+   "dbm": -19.6,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Replaced router and ONT",
+    "fault": "ONT dead",
+    "parts": "Replaced router and ONT",
+    "dbm": "-19.6",
+    "signoff": "Customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 2.64,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T061": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "sorted",
+    "fault": "wifi",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 5.25,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T062": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": [],
+   "dbm": -20.4,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "cabinet port swap",
+    "fault": "cabinet port swap",
+    "parts": null,
+    "dbm": "-20.4 at ont",
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 4.38,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T063": {
+  "raw": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "no-one in",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 5.96,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T064": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "evidence": {
+    "outcome": "will need to rebook",
+    "fault": "suspect the ONT",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "customer needed to leave for a hospital appointment"
+   }
+  },
+  "latency_s": 9.72,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T065": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": [
+    {
+     "sku": "SPLICE_PROTECTOR",
+     "qty": 4
+    }
+   ],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "spliced the fibre at the joint box",
+    "fault": "two breaks",
+    "parts": "4 splice protectors",
+    "dbm": null,
+    "signoff": "cust signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 2.49,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T066": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": [
+    {
+     "sku": "PSU",
+     "qty": 1
+    }
+   ],
+   "dbm": -21.0,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "tested -21.0 at the ONT",
+    "fault": "router power brick was faulty",
+    "parts": "new PSU",
+    "dbm": "-21.0",
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 10.1,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T067": {
+  "raw": {
+   "outcome": "ESCALATED",
+   "fault": "FIBRE_BREAK",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "passed to civils and network",
+    "fault": "fibre break confirmed with the OTDR",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 2.96,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T068": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": [
+    {
+     "sku": "CONNECTOR",
+     "qty": 1
+    }
+   ],
+   "dbm": -19.3,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "re-terminated the fibre at the faceplate",
+    "fault": "old one was pulled out",
+    "parts": "new connector",
+    "dbm": "-19.3",
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 4.35,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T069": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "evidence": {
+    "outcome": "rebook for tomorrow",
+    "fault": "drop looks damaged at the pole",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "rebook for tomorrow"
+   }
+  },
+  "latency_s": 9.98,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T070": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ONT",
+     "qty": 1
+    },
+    {
+     "sku": "ROUTER",
+     "qty": 1
+    },
+    {
+     "sku": "PATCH_CORD",
+     "qty": 2
+    }
+   ],
+   "dbm": -20.8,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "swapped ONT",
+    "fault": "ONT faulty",
+    "parts": "swapped ONT, swapped router, 2 patch cords",
+    "dbm": "-20.8",
+    "signoff": "got signature",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.3,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T071": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": [],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "tested",
+    "fault": "NFF",
+    "parts": null,
+    "dbm": null,
+    "signoff": "signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 4.59,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T072": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": [],
+   "dbm": -19.4,
+   "signoff": false,
+   "revisit": null,
+   "evidence": {
+    "outcome": "LOS cleared",
+    "fault": "connector dirty",
+    "parts": null,
+    "dbm": "minus nineteen point four",
+    "signoff": "no sig as customer was on a work call",
+    "revisit": null
+   }
+  },
+  "latency_s": 11.33,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T073": {
+  "raw": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "No access",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 14.73,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T074": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": [
+    {
+     "sku": "DROP_CABLE_M",
+     "qty": 20
+    }
+   ],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "fixed",
+    "fault": "drop",
+    "parts": "about 20m replaced",
+    "dbm": null,
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 13.38,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T075": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ONT",
+     "qty": 1
+    },
+    {
+     "sku": "ROUTER",
+     "qty": 1
+    }
+   ],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "ONT swapped, router swapped too",
+    "fault": "ONT faulty",
+    "parts": "ONT swapped, router swapped too",
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 2.24,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T076": {
+  "raw": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "escalated",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 6.61,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T077": {
+  "raw": {
+   "outcome": "ESCALATED",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "escalated",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 6.8,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T078": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "all done",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 10.1,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T079": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": [
+    {
+     "sku": "FACEPLATE",
+     "qty": 1
+    }
+   ],
+   "dbm": -18.8,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "resolved",
+    "fault": null,
+    "parts": "replaced the faceplate",
+    "dbm": "-18.8",
+    "signoff": "signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 15.04,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "T080": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "evidence": {
+    "outcome": "rebooked for saturday",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "customer needs to be there for the internal work and wasnt"
+   }
+  },
+  "latency_s": 9.29,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H001": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ROUTER_FAULT",
+   "parts": [
+    {
+     "sku": "ROUTER",
+     "qty": 1
+    }
+   ],
+   "dbm": -20.3,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Put in a new gateway",
+    "fault": "Gateway was toast, wouldnt boot past the white light",
+    "parts": "Put in a new gateway",
+    "dbm": "ONT RX reading -20.3",
+    "signoff": "CX e-signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 2.09,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H002": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": [
+    {
+     "sku": "PSU",
+     "qty": 1
+    }
+   ],
+   "dbm": -19.7,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Swapped adapter",
+    "fault": "Power adapter on the ONT failed",
+    "parts": "Swapped adapter",
+    "dbm": "Rx -19.7",
+    "signoff": "Sig obtained",
+    "revisit": null
+   }
+  },
+  "latency_s": 16.41,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H003": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": [
+    {
+     "sku": "CONNECTOR",
+     "qty": 2
+    }
+   ],
+   "dbm": -18.9,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "swapped two jumpers at the wall outlet",
+    "fault": "cracked ferrules",
+    "parts": "swapped two jumpers at the wall outlet",
+    "dbm": "minus eighteen point nine",
+    "signoff": "homeowner signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 6.54,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H004": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": [
+    {
+     "sku": "DROP_CABLE_M",
+     "qty": 35
+    }
+   ],
+   "dbm": -20.1,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "new pigtail at the ONT. RX minus 20.1, customer signed",
+    "fault": "drop wire torn off the house by a delivery truck",
+    "parts": "pulled in 35 meters of new drop",
+    "dbm": "RX minus 20.1",
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 11.34,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H005": {
+  "raw": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "No one answered the door or the phone.",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 32.52,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H006": {
+  "raw": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Premises locked",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 40.5,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H007": {
+  "raw": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Handed to NOC as a network fault",
+    "fault": "Saw LOS on the OLT side for the whole PON",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 52.08,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H008": {
+  "raw": {
+   "outcome": "ESCALATED",
+   "fault": "OUTAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "handed over to the network team",
+    "fault": "Whole PON tree showing down",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 35.23,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H009": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": [],
+   "dbm": -19.2,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Cleaned with a click cleaner, rx improved to -19.2",
+    "fault": "contaminated",
+    "parts": null,
+    "dbm": "-19.2",
+    "signoff": "homeowner e-signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 34.02,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H010": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "now within spec",
+    "fault": "Contaminated SC at the ONT",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 3.99,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H011": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "CABINET_PORT",
+   "parts": [],
+   "dbm": -21.5,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Customer back online",
+    "fault": "Bad port on the splitter in the street cabinet",
+    "parts": null,
+    "dbm": "-21.5 dBm",
+    "signoff": "Customer signature taken",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.08,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H012": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": [],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "customer satisfied",
+    "fault": "issue was the 2.4 band crowded",
+    "parts": null,
+    "dbm": null,
+    "signoff": "customer satisfied",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.87,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H013": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "WIFI_CONFIG",
+   "parts": [],
+   "dbm": -18.4,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "re-paired it",
+    "fault": "Mesh node in the garage wasnt joining",
+    "parts": null,
+    "dbm": "Rx -18.4",
+    "signoff": "CX signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 0.99,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H014": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ONT",
+     "qty": 1
+    }
+   ],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Replaced the unit",
+    "fault": "ONT unit faulty",
+    "parts": "Replaced the unit",
+    "dbm": "Didnt take a reading",
+    "signoff": "Customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.71,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H015": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ONT",
+     "qty": 1
+    }
+   ],
+   "dbm": -19.0,
+   "signoff": false,
+   "revisit": null,
+   "evidence": {
+    "outcome": "ONT replaced",
+    "fault": "ONT replaced",
+    "parts": "ONT replaced",
+    "dbm": "rx minus nineteen",
+    "signoff": "customer declined to sign",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.39,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H016": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "CIVILS",
+   "evidence": {
+    "outcome": "Couldnt finish",
+    "fault": "duct to the house is collapsed under the patio",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "Civil works required before re-pull"
+   }
+  },
+  "latency_s": 1.33,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H017": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "SECOND_TECH",
+   "evidence": {
+    "outcome": "need a cherry picker and a second guy",
+    "fault": "aerial drop is snagged on a tree",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "second guy"
+   }
+  },
+  "latency_s": 1.65,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H018": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "ONT_FAULT",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PARTS",
+   "evidence": {
+    "outcome": "will return when stock arrives",
+    "fault": "customer's one is dead",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "out of ONTs on the truck"
+   }
+  },
+  "latency_s": 1.22,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H019": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": "DROP_DAMAGE",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "PERMISSION",
+   "evidence": {
+    "outcome": "Pending approval",
+    "fault": "Drop is cut",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "HOA wont let us trench across the common area without approval"
+   }
+  },
+  "latency_s": 0.97,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H020": {
+  "raw": {
+   "outcome": "NO_ACCESS",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": false,
+   "revisit": "CUSTOMER_UNAVAILABLE",
+   "evidence": {
+    "outcome": "didnt start",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "rebooked"
+   }
+  },
+  "latency_s": 0.89,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H021": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "FIBRE_BREAK",
+   "parts": [
+    {
+     "sku": "SPLICE_PROTECTOR",
+     "qty": 1
+    }
+   ],
+   "dbm": -20.6,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Fusion spliced the break",
+    "fault": "Fusion spliced the break",
+    "parts": "1 sleeve used",
+    "dbm": "-20.6 after",
+    "signoff": "Signed by CX",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.49,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H022": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": [
+    {
+     "sku": "SPLICE_PROTECTOR",
+     "qty": 2
+    }
+   ],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "re-routed and spliced",
+    "fault": "break in the internal run behind the plasterboard",
+    "parts": "2 sleeves",
+    "dbm": null,
+    "signoff": "signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 0.95,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H023": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": [],
+   "dbm": -18,
+   "signoff": false,
+   "revisit": null,
+   "evidence": {
+    "outcome": "All tests passed",
+    "fault": "NFF",
+    "parts": null,
+    "dbm": "-18 to -19",
+    "signoff": "No signature",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.25,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H024": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "done",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 0.99,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H025": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "INTERNAL_CABLING",
+   "parts": [
+    {
+     "sku": "FACEPLATE",
+     "qty": 1
+    }
+   ],
+   "dbm": -19.5,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "new wall outlet fitted",
+    "fault": "old one was cracked",
+    "parts": "new wall outlet fitted",
+    "dbm": "rx -19.5",
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 1.19,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H026": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "PSU_FAULT",
+   "parts": [
+    {
+     "sku": "PSU",
+     "qty": 1
+    },
+    {
+     "sku": "ROUTER",
+     "qty": 1
+    }
+   ],
+   "dbm": -21.1,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "gateway was the dead one",
+    "fault": "power adapter and gateway replaced",
+    "parts": "power adapter and gateway replaced",
+    "dbm": "rx -21.1",
+    "signoff": "e-signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.33,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H027": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DIRTY_CONNECTOR",
+   "parts": [],
+   "dbm": null,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "light came back",
+    "fault": "cleaned the bulkhead adapter",
+    "parts": null,
+    "dbm": null,
+    "signoff": "customer signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.36,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H028": {
+  "raw": {
+   "outcome": "ESCALATED",
+   "fault": "CABINET_PORT",
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Raised to network engineering",
+    "fault": "splitter damaged",
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 4.94,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H029": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "NO_FAULT_FOUND",
+   "parts": [],
+   "dbm": -20.0,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "No fault found on site",
+    "fault": "No fault found",
+    "parts": null,
+    "dbm": "rx -20.0",
+    "signoff": "customer e-signed",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.47,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H030": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "DROP_DAMAGE",
+   "parts": [
+    {
+     "sku": "DROP_CABLE_M",
+     "qty": 10
+    }
+   ],
+   "dbm": -19.9,
+   "signoff": true,
+   "revisit": null,
+   "evidence": {
+    "outcome": "Replaced 2 pigtails and 10 meters of drop",
+    "fault": "10 meters of drop",
+    "parts": "Replaced 2 pigtails and 10 meters of drop",
+    "dbm": "-19.9",
+    "signoff": "CX signature obtained",
+    "revisit": null
+   }
+  },
+  "latency_s": 1.02,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H031": {
+  "raw": {
+   "outcome": "REVISIT",
+   "fault": null,
+   "parts": [],
+   "dbm": null,
+   "signoff": null,
+   "revisit": "OTHER",
+   "evidence": {
+    "outcome": "rebook",
+    "fault": null,
+    "parts": null,
+    "dbm": null,
+    "signoff": null,
+    "revisit": "rebook"
+   }
+  },
+  "latency_s": 1.43,
+  "model": "gemini-3.5-flash-lite"
+ },
+ "H032": {
+  "raw": {
+   "outcome": "RESOLVED",
+   "fault": "ONT_FAULT",
+   "parts": [
+    {
+     "sku": "ONT",
+     "qty": 1
+    }
+   ],
+   "dbm": null,
+   "signoff": null,
+   "revisit": null,
+   "evidence": {
+    "outcome": "swapped",
+    "fault": "ONT",
+    "parts": "ONT swapped",
+    "dbm": null,
+    "signoff": null,
+    "revisit": null
+   }
+  },
+  "latency_s": 1.16,
+  "model": "gemini-3.5-flash-lite"
+ }
+}
